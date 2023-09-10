@@ -1,149 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Resume</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharad Resume</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;   
+        }
+        .header-container{
+            margin-left: 10%;
+            display: flex;
+            max-width: 300mm;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            padding: 20px;
+            gap: 30px;
+            border-bottom: 1px solid rgb(245, 245, 240);
+        }
+        .header-container > *{
+            text-transform: capitalize;
+            height: fit-content;       
+        }
+        .title{
+            flex: 1;
+            font-size: 2rem;
+        }
+        .first-letter{
+            font-size: 3rem;
+            color: #66cc00;
+            font-family: 'Bakbak One', cursive;
+        }
+        .contact{
+            font-size: 10pt;
+        }
+        span{
+            color: black;
+            font-weight: bolder;
+        }
+        .about_me-container{
+            display: flex;
+            max-width: 300mm;
+            margin-left: 10%;
+            border-bottom: 1px solid rgb(245, 245, 240);
+        }
+        img[alt="profile-pic"]{
+            height: 200px;
+            clip-path: circle(80px);
+        }
+        .about_me{
+            font-size: 10pt;
+            font-weight: bold;
+            color: darkgray;
+            padding-top: 10px;
+            padding-left: 40px;   
+            letter-spacing: 0.5px;
+        }
+        .quote{
+            font-family: sans-serif;
+            font-size: 2rem;
+        }
+        .experience-container{
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-top: 20px;
+            justify-content: space-between;
+            max-width: 500px;
+            font-size: 10pt;
+            gap: 20px;
+            padding-right: 100px;
+            border-right: 1px solid rgb(245, 245, 245);;
+        }
+        .experience-container > *{
+            flex-basis: 200px;
+            flex: 1;
+            text-transform: capitalize;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .role{
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            font-weight: 900;
+        }
+        .company{
+            font-size: 12pt;
+            font-weight: 100;
+            margin-bottom: 40px;
+        }
+        .job_description{
+            font-size: 10pt;
+            font-weight: 100;
+        }
+        .job_description > ul > li{
+            margin-left: -25px;
+            margin-bottom: 10px;
+        }
+        .title2{
+            margin-top: 50px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2rem;
+          
+            width: fit-content;
+         
+            border-radius: 5px;
+            letter-spacing: 2px;
+        }
+       .education_container{
+        display: inline-flex;
+        flex-direction: column;
+        width: 530px;
+        text-align: end;
+       }
+       .education_container > .title2{
+        margin-bottom: 60px;
+        margin-left: 325px;
+       }
 
-    <body>
-        <h1 style="text-align: center;">Sharad Jadhav</h1>
-        <p style="text-align: center;">IT Business Analyst</p>
-        <p style="text-align: center;">
-            <img src="./assets/Sharad-Photo.JPG" height="200" border="1" />
-        </p>
-        <br />
-        <hr />
-        <h2 style="text-align: center;">-- Professional Synopsis -- </h2>
-        <hr />
-        <ul>
-            <li>Currently working as BA / Software Tester at Adient India Pvt. Ltd.</li>
-            <li>Experience in writing User stories and creating FS.</li>
-            <li>Good understanding of Software Testing Concepts:
+       
+      
+     
+
+        /*<span class="first-letter">W</span>ork <span class="first-letter">E</span>xperience*/
+
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-container">
+    <!--    <div class="title"><img src="./assets/name.png" alt="page-title"></div>     -->
+        <div class="title"><span class="first-letter">S</span>harad <span class="first-letter">j</span>adhav</div>
+        <div class="contact"><span>phone</span> <br />8888123821</div>
+        <div class="contact"><span>Email</span> <br />sharaddjadhavv@gmail.com</div>
+        <div class="contact"><span>address</span> <br />Hadapsar, Pune, 412307</div>
+    </div>
+    <div class="about_me-container">
+        <div class="profile-pic"><img src="./assets/Sharad-Photo.JPG" alt="profile-pic"></div>
+      
+        <div class="about_me"><span class="quote">"</span><br />Having 4 years of experience in IT industry & currently working as Business Analyst at Adient India Private Limited.
+            Knowledge of programming concepts, object-oriented programming and data structures and algorithms.
+            Always looking for ways of tightening up code and maintaining standards. Good Debugging skills. Designed a basic calculator 
+            in JAVA. Good at analytical problem solving, team building skills and believe in exploring new things & continuous learning.<span class="quote"><br />"</span>
+        </div>
+    </div>
+    <div class="experience-container">
+    <div class="title2"><span class="first-letter">W</span>ork <span class="first-letter">E</span>xperience</div>
+    
+        <div class="role">It business Analyst | 2022 - till date
+            <div class="company">Adient India</div>
+            <div class="job_description">
                 <ul>
-                    <li>SDLC (Software Development Life Cycle).</li>
-                    <li>Levels of Software Testing.</li>
-                    <ul>
-                        <li>White Box & Black Box Testing</li>
-                        <li>System Testing</li>
-                        <li>GUI Testing</li>
-                        <li>Functional & Non-Functional Testing</li>
-                        <li>Re-Testing & Regression Testing</li>
-                        <li>Sanity & Smoke Testing</li>
-                    </ul>
+                    <li>Analyzing Requirements / Replicate bugs in test environment</li>
+                    <li>Prepare FS (FRS)</li>
+                    <li>Prepare Test Cases / Test Execution</li>
+                    <li>Setting up QA Environment</li>
+                    <li>Unit testing / Regression Testing / Re-Testing / End-to-End Testing / UAT</li>
                 </ul>
-            </li>
-            <li>STLC (Software Testing Life Cycle).</li>
-            <li>Creating Test scenario & Test cases.</li>
-            <li>Bug Reporting and tracking using DevOps / JIRA.</li>
-            <li>Knowledge of Agile/Scrum Process and JIRA tool:
+            </div>
+        </div>
+        <div class="role">system engineer | 2021 - 2022
+            <div class="company">ITTI</div>
+            <div class="job_description">
                 <ul>
-                    <li> Agile/Scrum technologies and different Sprint activities:
-                        <ul>
-                            <li>Sprint Planning</li>
-                            <li>Backlog Refinement</li>
-                            <li>Sprint Review</li>
-                            <li>Sprint Retrospective</li>
-                        </ul>
-                    </li>
-                    <li>How to write test cases in JIRA with Zephyr plugin.</li>
+                    <li>Role Management</li>
+                    <li>Access Management</li>
+                    <li>SOD Matrix Maintenance</li> 
+                    <li>UAR</li>
                 </ul>
-            </li>
-            <li>Writing test scripts using Selenium WebDriver.</li>
-            <li>TestNG Framework for Selenium.</li>
-            <li>Knowledge of Apache POI - Data Driven Testing using Microsoft Excel.</li>
-            <li>Good understanding of cucumber BDD framework.</li>
-            <li>Understanding of CI – Maven, Git, GitHub & Jenkins. </li>
-            <br />
-        </ul>
-        <hr />
-            <h2 style="text-align: center;">-- Work Experience --</h2>
-            <hr />
-            <ul>
-                <li>
-                    <h3>Business Analyst</h3>
-                    <p>June 2022-till date || Adient India</p>
-                    <ul>
-                        <li>Analyzing Requirements / Replicate bugs in test environment.</li>
-                        <li>Prepare FS (FRS).</li>
-                        <li>Prepare Test Cases / Test Execution</li>
-                        <li>Setting up QA Environment.</li>
-                        <li>Unit testing / Regression Testing / Re-Testing / End-to-End Testing / UAT</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>System Engineer</h3>
-                    <p>2011 - 2022 || ITTI</p>
-                    <ul>
-                        <li>Role Management.</li>
-                        <li>Access Management.</li>
-                        <li>SOD Matrix Maintenance.</li>
-                        <li>UAR</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Programmer Trainee</h3>
-                    <p>2019 - 2021 || ITTI</p>
-                    <ul>
-                        <li>Central User Admin</li>
-                    </ul>
-                </li>
-            </ul>
-        <br />    
-        <hr />    
-        <h2 style="text-align: center;">-- Education --</h2>
-        <hr />
-        <ul>
-            <li>
-                <h3>BE: Mechanical</h3>
+            </div>
+        </div>
+        <div class="role">Programmer trainee | 2019 - 2021
+            <div class="company">ITTI</div>
+            <div class="job_description">
                 <ul>
-                    <li>2011 - 2016 ||| Savitribai Phule Pune University</li>
+                    <li>Central user admin</li>
+                    <li>Validate user access request from</li>
+                    <li>Supoort Europe and North Americas for access issues</li> 
                 </ul>
-            </li>
-            <li>
-                <h3>Diploma: Mechanical</h3>
-                <ul>
-                    <li>2007 - 2011 ||| Cusrow Wadia Institute of Technology</li>
-                </ul>
-            </li>
-            <li>
-                <h3>SSC</h3>
-                <ul>
-                    <li>MSBTE Sadhana Vidyalaya Hadapsar</li>
-                </ul>
-            </li>
-        </ul>
-        <br />
-        <hr />
-        <h2 style="text-align: center;">-- Core Competencies --</h2>
-        <hr />
-        <ul>
-            <li>
-                <h3>Languages Known</h3>
-                <p>Core Java, Python, C++, Progress ABL</p>
-            </li>
-            <li>
-                <h3>Tools | Softwares </h3>
-                <p>DevOps, JIRA, Eclipse, Selenium Web Driver, QAD, Arduino</p>
-            </li>
-            <li>
-                <h3>Framework Known</h3>
-                <p>TestNG, Cucumber</p>
-            </li>
-            <li>
-                <h3>Office Tools</h3>
-                <p>MS-Office, MS-Excel, Putty, WinSCP</p>
-            </li>
-        </ul>
-        <hr />
-        <p style="text-align: center;">
-            <a href="hobbies.html" >Hobbies</a>
-        </p>
-        <p style="text-align: center;">
-            <a href="conatct.html">Conatct</a>
-        </p>
-        <hr />
-        <footer>
-            <p>© 2023 All rights reserved.</p>
-        </footer>
-    </body>
+            </div>
+        </div>
+    </div>
+    <div class="education_container">
+        <div class="title2"><span class="first-letter">E</span>ducation</div>
+        <div class="role">B.E. Mechanical | 2011 - 2016
+            <div class="company">Pune Universtity, Pune</div>
+        </div>
+        <div class="role">Diploma Mechanical | 2007 - 2011
+            <div class="company">Cusrow Wadia Institute Of Technology, Pune</div>
+        </div>
+        <div class="role">SSC | 2007
+            <div class="company">Sadhna Vidyalaya, Pune</div>
+        </div>  
+    </div>
+</body>
 </html>
